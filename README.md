@@ -1,8 +1,12 @@
-# Getting Started with Create React App
+# First Time Setup
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Download the files
 
-## Available Scripts
+1. Install Git
+2. Create a folder on your computer where you can download this repository
+3. Clone this repository to your computer: `git clone https://github.com/minghao912/GAMERSOfExcelSpreadsheetLine30.git`
+
+# Available Scripts
 
 In the project directory, you can run:
 
