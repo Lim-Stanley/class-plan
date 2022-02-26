@@ -6,6 +6,13 @@
 2. Create a folder on your computer where you can download this repository
 3. Clone this repository to your computer: `git clone https://github.com/Lim-Stanley/class-plan`
 
+## Pushing to github
+
+1. `git pull origin main` This will update you to the most recent version of the app
+2. `git add .`
+3. `git commit -m "insert commit name"`
+4. `git push origin main`
+
 # Available Scripts
 
 In the project directory, you can run:
