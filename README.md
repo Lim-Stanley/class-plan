@@ -4,7 +4,7 @@
 
 1. Install Git
 2. Create a folder on your computer where you can download this repository
-3. Clone this repository to your computer: `git clone https://github.com/minghao912/GAMERSOfExcelSpreadsheetLine30.git`
+3. Clone this repository to your computer: `git clone https://github.com/Lim-Stanley/class-plan`
 
 # Available Scripts
 
