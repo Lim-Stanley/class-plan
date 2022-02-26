@@ -2,15 +2,34 @@ body {
     margin: 20px;
   }
   
+  .class{
+    background-color: #E8A87C;
+  }
+
   .searchSide{
-      color: #E27D60;
+      color: white;
+      background-color: #E8A87C;
+      font-size: large;
+  }
+
+  .display-container{
+    background-color:#C38D9E;
   }
 
   .display {
     display: flex;
     flex-direction: row;
+    padding: 2%;
   }
   
+  #searchBar{
+    padding-bottom: 3%;
+  }
+
+  #classList{
+    padding-bottom: 1%;
+  }
+
   #myUL {
     /* Remove default list styling */
     list-style-type: none;

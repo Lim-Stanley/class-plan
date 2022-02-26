@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Button, TextField } from '@mui/material';
+import { Box } from '@mui/material';
 import './index.css';
 
 // Colors:
 const RED = "#E27D60"
-const LIGHTBLUE = "#85DCB"
 const ORANGE = "E8A87C"
 const PURPLE = "C38D0E"
 const BLUE = "41B3A3"
@@ -19,18 +18,29 @@ class Display extends React.Component {
     }
 
     render() {
-        let search = [<input type="text" id="myInput" placeholder="Search for openings.."></input>]
+        let search = [<input class = "searchSide" type="text" id="myInput" placeholder="Search for majors..."></input>]
         let majorButtonList = [];
         for (let i = 0; i < majorList.length; i++){
-            majorButtonList.push(<li><button onClick ={() => this.setMode(majorList[i])}>{majorList[i]}</button></li>)
+            majorButtonList.push(<li id = "classList"><button class = "class" onClick ={() => this.setMode(majorList[i])}>{majorList[i]}</button></li>)
         }
         const majorDisplayList = (<ul id="myUL">{majorButtonList}</ul>)
 
         return (
-        <div id = "vert" className="display">
-            <div>{search}</div>
-            {majorDisplayList}
-        </div>
+        <Box  sx={{
+            width: '97vw',
+            height: '94vh',
+            margin: '0 0 0 0',
+            padding: '0 0 0 0',
+            boxSizing: 'border-box'
+        }} style = {{backgroundColor: RED}}
+        className="page-container">
+            <Box className = "display-container" sx = {{width: '16vw', height: '94vh'}}>
+            <div id = "vert" className="display">
+                <div id = "searchBar">{search}</div>
+                {majorDisplayList}
+            </div>
+            </Box>
+        </Box>
         );
     }
 }
