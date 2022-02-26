@@ -10,7 +10,7 @@ const PURPLE = "C38D0E"
 const BLUE = "41B3A3"
 
 const majorList = ["Aerospace Engineering", "Bioengineering", "Chemical Engineering", "Civil Engineering", "Computer Engineering",
-"Computer Science", "Computer Science and Engineering", "Electrical Engineering", "Materials Engineering", "Mechanical Engineering"]
+"Computer Science", "Computer Science and Engineering", "Electrical Engineering", "Materials Engineering", "Mechanical Engineering","a","a","a","a","a","a","a","a","a","a","a","a","a", "a","a","a","a","a","a","a","a","a","a","a","a","a",]
 
 class Display extends React.Component {
     setMode(name) {
@@ -23,8 +23,9 @@ class Display extends React.Component {
         for (let i = 0; i < majorList.length; i++){
             majorButtonList.push(<li id = "classList"><button class = "class" onClick ={() => this.setMode(majorList[i])}>{majorList[i]}</button></li>)
         }
-        const majorDisplayList = (<ul id="myUL">{majorButtonList}</ul>)
-
+        if (majorButtonList.length > 26) {
+            majorButtonList = majorButtonList.slice(0, 26)}
+        let majorDisplayList = (<ul id="myUL">{majorButtonList}</ul>)
         return (
         <Box  sx={{
             width: '97vw',
@@ -35,10 +36,10 @@ class Display extends React.Component {
         }} style = {{backgroundColor: RED}}
         className="page-container">
             <Box className = "display-container" sx = {{width: '16vw', height: '94vh'}}>
-            <div id = "vert" className="display">
-                <div id = "searchBar">{search}</div>
-                {majorDisplayList}
-            </div>
+                <div id = "vert" className="display">
+                    <div id = "searchBar">{search}</div>
+                    {majorDisplayList}
+                </div>
             </Box>
         </Box>
         );
