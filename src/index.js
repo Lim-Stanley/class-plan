@@ -1,25 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Button, TextField } from '@mui/material';
 import './index.css';
+
+// Colors:
+const RED = "#E27D60"
+const LIGHTBLUE = "#85DCB"
+const ORANGE = "E8A87C"
+const PURPLE = "C38D0E"
+const BLUE = "41B3A3"
 
 const majorList = ["Aerospace Engineering", "Bioengineering", "Chemical Engineering", "Civil Engineering", "Computer Engineering",
 "Computer Science", "Computer Science and Engineering", "Electrical Engineering", "Materials Engineering", "Mechanical Engineering"]
 
-class Game extends React.Component {
-render() {
-    let search = [<input type="text" id="myInput" placeholder="Search for your major.."></input>]
-    let majorButtonList = [];
-    for (let i = 0; i < majorList.length; i++){
-        majorButtonList.push(<li><button onClick ={() => this.setMode(majorList[i])}>{majorList[i]}</button></li>)
+class Display extends React.Component {
+    setMode(name) {
+        return name
     }
-    const majorDisplayList = (<ul id="myUL">{majorButtonList}</ul>)
-    return (
-    <div id = "vert" className="game">
-        <div>{search}</div>
-        {majorDisplayList}
-    </div>
-    );
-}
+
+    render() {
+        let search = [<input type="text" id="myInput" placeholder="Search for openings.."></input>]
+        let majorButtonList = [];
+        for (let i = 0; i < majorList.length; i++){
+            majorButtonList.push(<li><button onClick ={() => this.setMode(majorList[i])}>{majorList[i]}</button></li>)
+        }
+        const majorDisplayList = (<ul id="myUL">{majorButtonList}</ul>)
+
+        return (
+        <div id = "vert" className="display">
+            <div>{search}</div>
+            {majorDisplayList}
+        </div>
+        );
+    }
 }
 
 function searchProcess() {
@@ -45,6 +58,6 @@ function searchProcess() {
 
 // ========================================
 
-ReactDOM.render(<Game />, document.getElementById('root'));
+ReactDOM.render(<Display />, document.getElementById('root'));
 const searchBar = document.getElementById("myInput")
 searchBar.onkeyup = function() {searchProcess()}
