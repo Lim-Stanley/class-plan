@@ -1,7 +1,8 @@
+import React, { useState, useEffect } from "react";
 import { Box } from "@mui/material";
 import CSV from "../test.csv";
 import Papa from 'papaparse';
-import React, { useState, useEffect } from "react";
+import SearchBar from "./SearchBar";
 function HomePage() {
   useEffect(() => {
       async function getData() {
@@ -11,11 +12,10 @@ function HomePage() {
       const decoder = new TextDecoder('utf-8')
       const csv = decoder.decode(result.value) // the csv text
       const results = Papa.parse(csv, { header: true }) // object with { data, errors, meta }
+      const rows = results.data // array of objects
     }
     getData()
   }, []);
-  const searchBar = document.getElementById("myInput");
-  // searchBar.onkeyup = function() {searchProcess()}
   return (
     <div className="screen">
       <div className ="float-child">
@@ -24,9 +24,7 @@ function HomePage() {
             className="display-container"
             sx={{ width: "16vw", height: "94vh" }}
           >
-            <div id="vert" className="display">
-              <div id="searchBar"></div>
-            </div>
+              <SearchBar />
           </Box>
         </div>
       </div>
