@@ -1,7 +1,25 @@
 body {
     margin: 20px;
   }
-  
+
+  .float-child {
+    float: left;
+  }
+
+  .category{
+    width: 20%;
+  }
+
+  .year{
+    font-size: 15px;
+  }
+
+  .table{
+    text-align: center;
+    background-color: #E27D60;
+    font-size: 50px;
+  }
+
   .class{
     background-color: #E8A87C;
   }

@@ -1,7 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Box } from '@mui/material';
+import CSV from "./test.csv";
+import { CSVLink, CSVDownload } from "react-csv";
 import './index.css';
+
+// npm install react-csv --save;
+
+let rows = [
+    ["CS31", "LING20", "MATH61"],
+    ["CS32", "Ling120", "MATH70"]]
+
 
 // Colors:
 const RED = "#E27D60"
@@ -27,27 +36,49 @@ class Display extends React.Component {
             majorButtonList = majorButtonList.slice(0, 26)}
         let majorDisplayList = (<ul id="myUL">{majorButtonList}</ul>)
         return (
-        <Box  sx={{
-            width: '97vw',
-            height: '94vh',
-            margin: '0 0 0 0',
-            padding: '0 0 0 0',
-            boxSizing: 'border-box'
-        }} style = {{backgroundColor: RED}}
-        className="page-container">
+        <div className = "screen">
+            <div class = "float-child">
+                <div>
             <Box className = "display-container" sx = {{width: '16vw', height: '94vh'}}>
                 <div id = "vert" className="display">
                     <div id = "searchBar">{search}</div>
                     {majorDisplayList}
                 </div>
             </Box>
-        </Box>
-        );
+                </div>
+            </div>
+            <div class = "float-child">
+                <div class = "table">
+                    Year 1
+                <table class="year">
+                <tr>
+                    <th class = "category">Fall Quarter</th>
+                    <th class = "category">Winter Quarter</th>
+                    <th class = "category">Spring Quarter</th>
+                </tr>
+                    <tr>
+                        <td>CS32</td>
+                        <td>CS33</td>
+                        <td>CS33.1</td>
+                        </tr>
+                        <tr>
+                            <td>Berglunds snabbköp</td>
+                            <td>Christina Berglund</td>
+                            <td>Sweden</td>
+                        </tr>
+                            <td>Berglunds snabbköp</td>
+                            <td>Christina Berglund</td>
+                            <td>Sweden</td>
+                        </table>
+                        </div>
+                    </div>
+            </div>
+            );
+        }
     }
-}
 
-function searchProcess() {
-  // Declare variables
+    function searchProcess() {
+    // Declare variables
   var input, filter, ul, li, a, i, txtValue;
   input = document.getElementById('myInput');
   if (input === null) {return;}
