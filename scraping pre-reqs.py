@@ -55,13 +55,14 @@ if div is not None:
     df.columns = ["Course Name", "Course Identifier", "Option"]
     df.loc[df.index[-1], "Option"] = f"Option {options}"
     df = df.replace({"\[": "", "'": "", "\]": ""}, regex=True)
-# Converts data to a pandas DataFrame, splits each entry into its columns, names columns, adds Option for the last row (did not get to it in the loop), and cleans data by removing some special characters
+# Converts data to a pandas DataFrame, splits each entry into its columns, names columns,
+# adds Option for the last row (did not get to it in the loop), and cleans data by removing
+# some special characters
+
 else:
     df = pd.DataFrame(np.zeros((1, 3)))
     df.columns = ["Course Name", "Course Identifier", "Option"]
-    print(df)
-
-print(df)
+# If the given class has no pre-reqs, create a dataframe with 0's
 
 df.to_csv("CS33_prereqs.csv", index=False)
 # Converts dataframe to csv without row indices, exports to "CS33.csv" file
