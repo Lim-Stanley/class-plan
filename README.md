@@ -1,4 +1,4 @@
-# First Time Setup
+# PlannedBruin HOTH-9 Project
 
 ## Download the files
 
@@ -7,7 +7,7 @@
 3. Clone this repository to your computer: `git clone https://github.com/Lim-Stanley/class-plan`
 4. Install mui with `npm install @mui/material @emotion/react @emotion/styled`
 
-# Available Scripts
+# Running the Project
 
 In the project directory, you can run:
 
@@ -19,8 +19,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-## Learn More
+## Web Scraping and Data
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+The scraping pre-reqs.py file contains code for scraping course prerequisites from UCLA official resources.
+The CourseRequisites.py file contains code for scraping the course requirements from UCLA official resources.
