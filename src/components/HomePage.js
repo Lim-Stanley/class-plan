@@ -3,6 +3,7 @@ import { Box } from "@mui/material";
 import CSV from "../test.csv";
 import Papa from 'papaparse';
 import SearchBar from "./SearchBar";
+import logo from './logo (3).jpg';
 
 function HomePage() {
   const [major, setMajor] = useState("0")
@@ -131,6 +132,9 @@ function HomePage() {
           {table2}
           {table3}
           {table4}
+      </div>
+      <div>
+        <img src={logo}/>
       </div>
     </div>
   );
