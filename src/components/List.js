@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import data from "./ListData.json"
 
 function List(props) {
@@ -15,7 +14,7 @@ function List(props) {
     return (
         <ul>
             {filteredData.map((item) => (
-                <li key={item.id}>{item.text}</li>
+                <li key={item.id}><button onClick ={() => props.updateState(item.text)}>{item.text}</button></li>
             ))}
         </ul>
     )

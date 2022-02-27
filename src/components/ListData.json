@@ -1,31 +1,109 @@
 [{
     "id": 1,
-    "text": "Devpulse"
+    "text": "Aerospace Studies"
 }, {
     "id": 2,
-    "text": "Linklinks"
+    "text": "African American Studies"
 }, {
     "id": 3,
-    "text": "Centizu"
+    "text": "African Studies"
 }, {
     "id": 4,
-    "text": "Dynabox"
+    "text": "American Indian Studies"
 }, {
     "id": 5,
-    "text": "Avaveo"
+    "text": "Anesthesiology and Perioperative Medicine"
 }, {
     "id": 6,
-    "text": "Demivee"
+    "text": "Anthropology"
 }, {
     "id": 7,
-    "text": "Jayo"
+    "text": "Applied Linguistics"
 }, {
     "id": 8,
-    "text": "Blognation"
+    "text": "Archaeology"
 }, {
     "id": 9,
-    "text": "Podcat"
+    "text": "Architecture and Urban Design"
 }, {
     "id": 10,
-    "text": "Layo"
+    "text": "Art"
+}, {
+    "id": 11,
+    "text": "Art History"
+}, {
+    "id": 12,
+    "text": "Arts and Architecture"
+}, {
+    "id": 13,
+    "text": "Asian American Studies"
+}, {
+    "id": 14,
+    "text": "Astrophysics"
+}, {
+    "id": 15,
+    "text": "Atmospheric and Ocean Sciences"
+}, {
+    "id": 16,
+    "text": "Bioengineering"
+}, {
+    "id": 17,
+    "text": "Bioinformatics"
+}, {
+    "id": 18,
+    "text": "Biological Chemistry"
+}, {
+    "id": 19,
+    "text": "Biomedical Research"
+}, {
+    "id": 20,
+    "text": "Biostatistics"
+}, {
+    "id": 21,
+    "text": "Chemical and Biomolecular Engineering"
+}, {
+    "id": 22,
+    "text": "Chemistry and Biochemistry"
+}, {
+    "id": 23,
+    "text": "Chicana and Chicano Studies"
+}, {
+    "id": 24,
+    "text": "Civic Engagement"
+}, {
+    "id": 25,
+    "text": "Civil and Environmental Engineering"
+}, {
+    "id": 26,
+    "text": "Classics"
+}, {
+    "id": 27,
+    "text": "Communication"
+}, {
+    "id": 28,
+    "text": "Community Engagement and Social Change"
+}, {
+    "id": 29,
+    "text": "Philosophy"
+}, {
+    "id": 30,
+    "text": "Physics and Astronomy"
+}, {
+    "id": 31,
+    "text": "Physiology"
+}, {
+    "id": 32,
+    "text": "Political Science"
+}, {
+    "id": 33,
+    "text": "Phychiatry and Biobehavioral Sciences"
+}, {
+    "id": 34,
+    "text": "Psychology"
+}, {
+    "id": 35,
+    "text": "Public Affairs"
+}, {
+    "id": 36,
+    "text": "Public Health"
 }]
