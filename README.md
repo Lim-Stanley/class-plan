@@ -26,3 +26,5 @@ You may also see any lint errors in the console.
 
 The scraping pre-reqs.py file contains code for scraping course prerequisites from UCLA official resources.
 The CourseRequisites.py file contains code for scraping the course requirements from UCLA official resources.
+
+<img width="500" alt="PlannedBruinArrow" src="https://user-images.githubusercontent.com/92659795/182254080-4942cbc3-3e34-47ba-ada2-76af9657ff53.png">
