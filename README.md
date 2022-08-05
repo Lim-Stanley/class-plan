@@ -40,7 +40,7 @@ To experiment with different class plans, select any major on the left toolbar.
 ## Features
 In this section we describe the intended features of our program.
 ##### Data Scraping
-In order to create these schedules for each major, we had to first find the necessary courses to graduate for each major. Along with this, we needed all of the prerequisites for each course, to ensure that a course does not get recommended prior to its prerequisites getting recommended (ex: MATH32B gets recommended before MATH32A).
+In order to create these schedules for each major, we had to first find the necessary courses to graduate for each major. Along with this, we needed all of the prerequisites for each course, to ensure that a course does not get recommended prior to its prerequisites getting recommended (ex: MATH32A should get recommended before MATH32B).
 
 Given that UCLA does not have a publically available database with this information, we had to scrape both the [UCLA course catalog](https://registrar.ucla.edu/academics/course-descriptions) to get information about pre-requisites, and [UCLA major requirements](https://admission.ucla.edu/apply/majors) to get information about what courses are needed to graduate with a specific major. 
 
