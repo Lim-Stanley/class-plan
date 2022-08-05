@@ -1,5 +1,5 @@
 # PlannedBruin HOTH-9 Project
-This repository provides the PlannedBruin application, a student-friendly enrollment planner designed to supply UCLA students with a four year class schedule, saving students from suffering from the common struggles surrounding enrollment restrictions, class availability, confusing pre-requisite requirements, and more.
+This repository provides the PlannedBruin application, a student-friendly enrollment planner designed to supply UCLA students with a four year class schedule, saving students from suffering from the common struggles surrounding enrollment restrictions, class availability, confusing prerequisite requirements, and more.
 
 https://user-images.githubusercontent.com/92659795/182241656-d34caf7a-65a6-4e62-80ac-d2392d3e2d4c.mp4
 
@@ -42,7 +42,7 @@ In this section we describe the intended features of our program.
 ##### Data Scraping
 In order to create these schedules for each major, we had to first find the necessary courses to graduate for each major. Along with this, we needed all of the prerequisites for each course, to ensure that a course does not get recommended prior to its prerequisites getting recommended (ex: MATH32A should get recommended before MATH32B).
 
-Given that UCLA does not have a publically available database with this information, we had to scrape both the [UCLA course catalog](https://registrar.ucla.edu/academics/course-descriptions) to get information about pre-requisites, and [UCLA major requirements](https://admission.ucla.edu/apply/majors) to get information about what courses are needed to graduate with a specific major. 
+Given that UCLA does not have a publically available database with this information, we had to scrape both the [UCLA course catalog](https://registrar.ucla.edu/academics/course-descriptions) to get information about prerequisites, and [UCLA major requirements](https://admission.ucla.edu/apply/majors) to get information about what courses are needed to graduate with a specific major. 
 
 While we did not create a functioning algorithm to cleanly data scrape either source of data, we do plan in the future to refine our data scraping to be able to extract the above information from the stated sources
 
