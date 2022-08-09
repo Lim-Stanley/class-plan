@@ -1,49 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
 body {
-    margin: 20px;
+    background-color: #4682b4;
   }
 
-  .float-child {
-    float: left;
+  tr {
+    text-align: center;
   }
 
-  .category{
-    width: 20%;
+  .major-name{
+    background-color: transparent;
+    color: white;
+    border: None;
+    cursor: pointer;
+    text-align: left;
   }
 
   .year{
-    font-size: 15px;
-  }
-
-  .table{
-    text-align: center;
-    background-color: #E27D60;
-    font-size: 50px;
-  }
-
-  .class{
-    background-color: #E8A87C;
-  }
-
-  .searchSide{
-      color: white;
-      background-color: #E8A87C;
-      font-size: large;
-  }
-
-  .display-container{
-    background-color:#C38D9E;
-  }
-
-  .display {
-    display: flex;
-    flex-direction: row;
-    padding: 2%;
+    font-size: 70px;
+    border: 10px;
   }
   
-  #searchBar{
-    padding-bottom: 3%;
+  .search {
+    border: 5px solid;
+    border-color: goldenrod;
+    width: 15vw;
+    height: 80vh;
+    background-color: #083763;
   }
 
+  ::-webkit-scrollbar {
+    background-color: #272522;
+    border-bottom: 0;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #767676;
+    border-radius: 20px;
+  }
+
+  ::-webkit-scrollbar-corner {
+    color: #a7a79f;
+  }
+
+  table{
+    width: 35vw;
+    height: 40vh;
+    text-align: center;
+    background-color: #083763;
+    color: white;
+    font-size: 20px;
+    border: 5px solid;
+    border-color: goldenrod;
+  }
+
+  .major-list {
+    list-style: None;
+    padding: 0;
+    background-color: #083763;
+    overflow: scroll;
+    overflow-x:hidden;
+    height: 90%;
+    padding: 5%
+  }
+
+  input {
+    font-size: 20px;
+    width: 100%;
+    padding: 5%;
+    background-color: #083763;
+    color: white
+  }
+
+  input::placeholder{
+    color: #c8c8c8;
+  }
+  .screen {
+    justify-content: flex-start;
+    display: flex;
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+    overflow: auto;
+    padding: 30px;
+    border-radius: 5px;
+  }
+
+  #outlined-basic {
+    color: white;
+  }
+  
   #classList{
     padding-bottom: 1%;
   }
