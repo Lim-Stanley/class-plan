@@ -34,7 +34,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 To experiment with different class plans, select any major on the left toolbar.
 
-<img width="500" alt="PlannedBruinArrow" src="https://user-images.githubusercontent.com/92659795/182254080-4942cbc3-3e34-47ba-ada2-76af9657ff53.png">
+<img width="1221" alt="Planned_Bruin_Tutorial" src="https://user-images.githubusercontent.com/92659795/185148523-e6ee3cd3-283a-4b36-9073-fffc7728e51f.png">
 
 
 ## Features
